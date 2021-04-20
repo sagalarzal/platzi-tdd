@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <phpunit
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/|version|/phpunit.xsd"
@@ -5,7 +6,7 @@
         backupStaticAttributes="false"
         bootstrap="vendor/autoload.php"
         cacheTokens="false"
-        colors="false"
+        colors="true"
         convertErrorsToExceptions="true"
         convertNoticesToExceptions="true"
         convertWarningsToExceptions="true"
@@ -17,9 +18,11 @@
         stopOnIncomplete="false"
         stopOnSkipped="false"
         stopOnRisky="false"
-        testSuiteLoaderClass="PHPUnit\Runner\StandardTestSuiteLoader"
         timeoutForSmallTests="1"
         timeoutForMediumTests="10"
         timeoutForLargeTests="60"
         verbose="false">
+    <testsuite name = "Test directory">
+        <directory>test</directory>
+    </testsuite>
 </phpunit>
